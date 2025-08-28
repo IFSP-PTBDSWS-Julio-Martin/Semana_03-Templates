@@ -11,7 +11,7 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', current_time=datetime.utcnow())
     
 @app.route('/user/<nome>')
 def user(nome):
