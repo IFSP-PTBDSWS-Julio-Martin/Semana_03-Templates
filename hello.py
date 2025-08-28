@@ -11,10 +11,10 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html)
+    return render_template('index.html')
     
 @app.route('/user/<nome>')
-def user():
+def user(nome):
     return render_template('user.html', nome=nome)
 
 @app.route('/rotainexistente')
